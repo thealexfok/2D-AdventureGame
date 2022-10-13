@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<World>
+	<Player name="Player1" x="320" y="240" path="TinyAdventurePack/Character/Char_one/Idle/Char_idle_down.png"/>
+	<Objects>
+		<Object name="Bush" x="50" y="50" path="TinyAdventurePack/Other/Bush.png"/>
+		<Object name="Bush" x="150" y="350" path="TinyAdventurePack/Other/Bush.png"/>
+		<Object name="Tree" x="450" y="250" path="TinyAdventurePack/Other/Tree/Tree.png"/>
+		<!-- <Object name="Sign" x="320" y="160" path="TinyAdventurePack/Other/sign.png"/> -->
+	</Objects>
+</World>
