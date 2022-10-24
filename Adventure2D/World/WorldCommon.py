@@ -1,9 +1,16 @@
 import math
 import numpy as np
 
+from World.Chars.Player import Player
+from World.WorldObject import WorldObject
+
 ObjectSize = np.array([32,32])
+CharacterSize = np.array([180,25])
 ScreenSize = np.array([1,1])
+PhysicsEngine = None
 Players = [ None , None ]
+WorldObjects = []
+NewWorldObjects = []
 
 def ComputeDir(src, tgt):
     dir = tgt - src

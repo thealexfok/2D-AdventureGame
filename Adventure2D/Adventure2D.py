@@ -6,7 +6,7 @@ size = width, height = 640, 480
 screen = pygame.display.set_mode(size)
 
 import World.World as World
-World.Init(size)
+World.Init(size,screen)
 
 def Update(deltaTime):
     for event in pygame.event.get():
@@ -14,6 +14,7 @@ def Update(deltaTime):
             return False
         if World.ProcessEvent(event) == True:
             continue
+        
         
     World.Update(deltaTime)
     return True
