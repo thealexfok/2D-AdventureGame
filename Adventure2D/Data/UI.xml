@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<UI>
+
+	<Group name="Player1">
+		<!-- <Text visible = "true" x="0" y="0" justify="center" vjustify="center">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="Player" font = "arial" size="64" color="black" justify="center" vjustify="center"/>
+		</Text> -->
+		<Image visible = "true" x="0" y="0" width="160" height="16" justify="right" vjustify="top" path="Data/HealthBar.png">
+			<Anchor x="1" y="0"/>
+		</Image>
+		
+	</Group>
+	<Group name="Skel1">
+		<Image visible = "false" x="0" y="0" width="160" height="16" justify="left" vjustify="top" path="Data/HealthBar.png">
+			<Anchor x="0" y="0"/>
+		</Image>
+	</Group>
+	<Group name="Skel2">
+		<Image visible = "false" x="0" y="16" width="160" height="16" justify="left" vjustify="top" path="Data/HealthBar.png">
+			<Anchor x="0" y="0"/>
+		</Image>
+	</Group>
+	<Group name= "Menu">
+		<Button visible = "true" id="newWorldButton" x="-100" y="0" width="150" height="50"  justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="New World" font="arial" color ="black" size="24" justify="center" vjustify="center"/>
+			<Action onClick="StartGame" pressed="Data/pressed.png"/>
+		</Button>
+		<Button visible="true" id="loadGameButton" x="100" y="0" width="150" height="50" justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y ="0.5" />
+			<Font text="Load Game" font="arial" color="black" size="24" justify="center" vjustify="center"/>
+			<Action onClick="LoadGame" pressed="Data/pressed.png" />
+		</Button>
+		<Button visible="true" id="volume-" x="-110" y="110" width="50" height="25" justify="center" vjustify="center" path="Data/border.png">
+            <Anchor x="0.5" y ="0.5" />
+			<Font text="V-" font="arial" color="black" size="24" justify="center" vjustify="center"/>
+        	<Action onClick="Volume-" pressed="Data/pressed.png" />
+		</Button>
+
+		<Button visible="true" id="volume+" x="110" y="110" width="50" height="25" justify="center" vjustify="center" path="Data/border.png">
+			<Anchor x="0.5" y ="0.5" />
+			<Font text="V+" font="arial" color="black" size="24" justify="center" vjustify="center"/>
+			<Action onClick="Volume+" pressed="Data/pressed.png" />
+		</Button>
+	</Group>
+	<Group name= "End">
+		<Text visible = "false" id="win" x="0" y="0" justify="center" vjustify="center">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="You Win" font = "arial" size="64" color="black" justify="center" vjustify="center"/>
+		</Text>
+		<Text visible = "false" id="lose" x="0" y="0" justify="center" vjustify="center">
+			<Anchor x="0.5" y="0.5"/>
+			<Font text="You Lose" font = "arial" size="64" color="black" justify="center" vjustify="center"/>
+		</Text>
+	</Group>
+</UI>
